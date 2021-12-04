@@ -6,7 +6,7 @@
 function remainder(a, b) {
     if (b > a) {
         return b % a 
-    } else  {
+    } else {
         return a % b
     }
 }
