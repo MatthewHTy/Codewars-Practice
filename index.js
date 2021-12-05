@@ -61,3 +61,12 @@ function basicOp(operation, value1, value2) {
   //   / operator
            operation == '/' ? value1 / value2 : 'No Value'
 }
+// String repeat 8kyu
+// Write a function called repeatStr which repeats the given string exactly n times
+function repeatStr (n, s) {
+    let string = "";
+    for (let i = 0; i < n; i++) {
+    string += s
+    }
+    return string
+  }
