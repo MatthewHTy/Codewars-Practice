@@ -70,3 +70,8 @@ function repeatStr (n, s) {
     }
     return string
   }
+// Convert a booleam to a string
+// Implement a function which convert the given boolean value into its string representation
+function booleanToString(b){
+    return b ? "true" : "false";
+  }
