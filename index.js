@@ -75,3 +75,9 @@ function repeatStr (n, s) {
 function booleanToString(b){
     return b ? "true" : "false";
   }
+//   For Twins 2. Math Operations
+function iceBrickVolume(radius, bottleLength, rimLength) {
+    // Your code should be here ;
+    let height = bottleLength - rimLength
+    return radius * radius * (height + height)
+  }
