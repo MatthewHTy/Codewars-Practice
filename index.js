@@ -81,3 +81,8 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
     let height = bottleLength - rimLength
     return radius * radius * (height + height)
   }
+// Return Negative 8kyu
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+function makeNegative(num) {
+    return num ? -num : positive;
+  }
