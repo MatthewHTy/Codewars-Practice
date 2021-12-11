@@ -91,3 +91,8 @@ function makeNegative(num) {
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+// Beginner series #1 school paperwork
+function paperwork(n, m) {
+  return n < 0 || m < 0 ? 0
+  : n * m;
+}
