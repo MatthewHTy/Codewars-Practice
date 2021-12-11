@@ -112,3 +112,8 @@ function even_or_odd(number) {
 function stringToNumber(num) {
   return num ? num.toString() : false;
 };
+// create a function which returns an RNA sequence from the given DNA sequence
+function DNAtoRNA(dna) {
+  return dna ? dna.split('T').join('U')
+  : 'DNA Sequence';
+}
