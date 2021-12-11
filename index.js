@@ -117,3 +117,7 @@ function DNAtoRNA(dna) {
   return dna ? dna.split('T').join('U')
   : 'DNA Sequence';
 }
+// reversed strings
+function solution(str){
+  return str.split('').reverse().join('')
+ }
