@@ -96,3 +96,11 @@ function paperwork(n, m) {
   return n < 0 || m < 0 ? 0
   : n * m;
 }
+// Even or Odd
+function even_or_odd(number) {
+  if(number % 2 == 0) {
+    return 'Even' 
+  } else {
+    return 'Odd'
+  }
+}
