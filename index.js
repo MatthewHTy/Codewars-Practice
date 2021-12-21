@@ -131,4 +131,14 @@ function solution(str){
       return false
     }
   }
-  
+  // Square(n)Sum
+  function squareSum(numbers){
+
+    let result = 0;
+  // let result = 0, to be used inside the for loop
+    for (let i = 0; i < numbers.length; i++) {
+  // need a for loop to run through the index of the array when the function is called
+    result += (numbers[i] * numbers[i]);
+    }
+  return result
+  }
