@@ -121,3 +121,14 @@ function DNAtoRNA(dna) {
 function solution(str){
   return str.split('').reverse().join('')
  }
+// create a function where an if else statement is used to determine if a hero will survive
+ function hero(bullets, dragons){
+  //Get Coding!  
+    
+    if (bullets / 2 >= dragons) {
+      return true
+    } else {
+      return false
+    }
+  }
+  
