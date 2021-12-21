@@ -184,3 +184,8 @@ function finalGrade (exam, projects) {
     // ternary operator
   //   return a number (final grade)
   }
+  function removeChar(str){
+    //You got this!
+     return str.slice(1, str.length - 1);
+   
+   };
