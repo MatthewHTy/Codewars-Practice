@@ -142,3 +142,15 @@ function solution(str){
     }
   return result
   }
+// Using Math.pow method
+function squareSum(numbers){
+
+  let result = 0;
+//   to be used for summing the results inside the for loop
+  for (let i = 0; i < numbers.length; i++) {
+//     for loop is used to run through the array of numbers given
+    result += (Math.pow(numbers[i], 2))
+//     math. pow method used to square the number
+  };
+  return result;
+}
