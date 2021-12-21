@@ -181,6 +181,6 @@ function finalGrade (exam, projects) {
     }
     
   //   return finalGrade
-    
+    // ternary operator
   //   return a number (final grade)
   }
