@@ -134,6 +134,9 @@ if (bullets / 2 >= dragons) {
 } else {
   return false;
 };
+
+// ternary operator
+return bullets / 2 >= dragons ? true : false;
 // Square(n)Sum
 function squareSum(numbers) {
 
