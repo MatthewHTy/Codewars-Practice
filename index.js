@@ -160,3 +160,27 @@ function squareSum(numbers) {
   };
   return result;
 }
+// function to return student's grades
+function finalGrade (exam, projects) {
+
+  //   grade for exam is 0 to 100
+  //  projects - number of completed projects (from 0 and above)
+  
+  //   let resultOfExam = 0;
+  //   let numberOfProjects = 0;
+  // will be used later in statements to find out what grades the student got
+    
+    if (exam > 90 || projects > 10) {
+      return 100;
+    } else if (exam > 75 && projects >= 5) {
+      return 90;
+    } else if (exam > 50 && projects >= 2) {
+      return 75;
+    } else {
+      return 0;
+    }
+    
+  //   return finalGrade
+    
+  //   return a number (final grade)
+  }
