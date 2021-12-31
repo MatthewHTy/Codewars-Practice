@@ -129,25 +129,28 @@ function solution(str) {
 // return true if he survives, and false if he doesn't
 // solution we can use is an if else statement or a ternary operator
 // if else statement
-if (bullets / 2 >= dragons) {
-  return true;
-} else {
-  return false;
-};
+function heRo(bullets, dragons) {
 
-// ternary operator
-return bullets / 2 >= dragons ? true : false;
-// Square(n)Sum
-function squareSum(numbers) {
+  if (bullets / 2 >= dragons) {
+    return true;
+  } else {
+    return false;
+  };
 
-  let result = 0;
-  // let result = 0, to be used inside the for loop
-  for (let i = 0; i < numbers.length; i++) {
-    // need a for loop to run through the index of the array when the function is called
-    result += (numbers[i] * numbers[i]);
-  }
-  return result
+  // ternary operator
+  return bullets / 2 >= dragons ? true : false;
 }
+// Square(n)Sum
+// function squareSum(numbers) {
+
+//   let result = 0;
+//   // let result = 0, to be used inside the for loop
+//   for (let i = 0; i < numbers.length; i++) {
+//     // need a for loop to run through the index of the array when the function is called
+//     result += (numbers[i] * numbers[i]);
+//   }
+//   return result
+// }
 // Using Math.pow method
 function squareSum(numbers) {
 
@@ -160,32 +163,67 @@ function squareSum(numbers) {
   };
   return result;
 }
+console.log(squareSum(100));
 // function to return student's grades
-function finalGrade (exam, projects) {
+function finalGrade(exam, projects) {
 
   //   grade for exam is 0 to 100
   //  projects - number of completed projects (from 0 and above)
-  
+
   //   let resultOfExam = 0;
   //   let numberOfProjects = 0;
   // will be used later in statements to find out what grades the student got
-    
-    if (exam > 90 || projects > 10) {
-      return 100;
-    } else if (exam > 75 && projects >= 5) {
-      return 90;
-    } else if (exam > 50 && projects >= 2) {
-      return 75;
-    } else {
-      return 0;
-    }
-    
-  //   return finalGrade
-    // ternary operator
-  //   return a number (final grade)
+
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  } else {
+    return 0;
   }
-  function removeChar(str){
-    //You got this!
-     return str.slice(1, str.length - 1);
-   
-   };
+
+  //   return finalGrade
+  // ternary operator
+  //   return a number (final grade)
+}
+
+function removeChar(str) {
+  //You got this!
+  return str.slice(1, str.length - 1);
+
+};
+
+function shortcut(string) {
+
+  let vowels = 'aeiou';
+  let output = [];
+
+  for (let i = 0; i < string.length; i++) {
+    if (!vowels.includes(string[i])) {
+      output.push(string[i])
+    }
+  };
+  return output.join('');
+  // or output.join([])
+  // .join method concatenates the string into one
+};
+// Grasshopper - Gradebook
+function getGrade(s1, s2, s3) {
+  // Code here
+  let sumOfGrades = (s1 + s2 + s3) / 3;
+
+  if (sumOfGrades >= 90) {
+    return "A"
+  } else if (sumOfGrades >= 80 && sumOfGrades < 90) {
+    return "B"
+  } else if (sumOfGrades >= 70 && sumOfGrades < 80) {
+    return "C"
+  } else if (sumOfGrades >= 60 && sumOfGrades < 70) {
+    return "D"
+  } else {
+    return "F"
+  }
+  return getGrade;
+}
