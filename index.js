@@ -227,3 +227,16 @@ function getGrade(s1, s2, s3) {
   }
   return getGrade;
 }
+
+function sixToast(num) {
+  // you code here
+  let numberOfToast = 0;
+  if (num > 6) {
+    numberOfToast = num - 6
+  } else if (num < 6) {
+    numberOfToast = 6 - num
+  } else if (num == 6) {
+    numberOfToast = 0;
+  }
+  return numberOfToast
+}
