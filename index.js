@@ -240,3 +240,5 @@ function sixToast(num) {
   }
   return numberOfToast
 }
+
+// Roman Numerals to Integer
