@@ -169,6 +169,7 @@ function finalGrade(exam, projects) {
 
   //   grade for exam is 0 to 100
   //  projects - number of completed projects (from 0 and above)
+  // add explanation
 
   //   let resultOfExam = 0;
   //   let numberOfProjects = 0;
