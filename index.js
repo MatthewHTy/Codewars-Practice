@@ -249,3 +249,12 @@ function sixToast(num) {
 function lovefunc(flower1, flower2){
   return (flower1 + flower2) % 2 === 1
 }
+
+// Beginner Series #2 Clock
+function past(h, m, s){
+  let miliseconds = 0;
+  miliseconds = miliseconds + s * 1000;
+  miliseconds = miliseconds + m * 60000;
+  miliseconds = miliseconds + h * 3600000;
+  return miliseconds;
+}
